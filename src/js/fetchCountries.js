@@ -7,4 +7,4 @@ function fetchCountries(name) {
         .then((response) => response.json());
 }
 
-export default { fetchCountries };
+export { fetchCountries }
