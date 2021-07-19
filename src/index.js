@@ -14,6 +14,7 @@ refs.searchCountry.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY))
 
 
 function onSearch(e) {
+    e.preventDefault();
 
     refs.countryInfo.innerHTML = ''
     refs.countryList.innerHTML = '';
