@@ -18,16 +18,16 @@ function onSearch(e) {
     refs.countryInfo.innerHTML = ''
     refs.countryList.innerHTML = '';
 
-    const searchLetter = e.target.value;
+    const input = e.target.value;
 
-    console.log(searchLetter)
+    console.log(input)
 
-    if (searchLetter === '') {
+    if (input === '') {
         return Notiflix.Notify.failure('Please enter something');
     }
     else {
 
-        fetchCountries(searchLetter)
+        fetchCountries(input)
             .then(CountriesCardMarkup)
             .catch(error => console.log(error))
     }
