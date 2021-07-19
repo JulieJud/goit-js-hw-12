@@ -31,6 +31,7 @@ function onSearch(e) {
         fetchCountries(input)
             .then(CountriesCardMarkup)
             .catch(error => console.log(error))
+
     }
 }
 
