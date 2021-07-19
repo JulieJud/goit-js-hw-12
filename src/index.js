@@ -19,7 +19,7 @@ function onSearch(e) {
     refs.countryInfo.innerHTML = ''
     refs.countryList.innerHTML = '';
 
-    const input = e.target.value;
+    const input = refs.searchCountry.value;
 
     console.log(input)
 
